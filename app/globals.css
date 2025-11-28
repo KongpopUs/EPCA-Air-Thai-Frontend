@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Root variables */
+:root {
+  --background: #87ceeb; /* ฟ้าอ่อน (Sky Blue) */
+  --foreground: #03396c; /* น้ำเงินเข้มสำหรับตัวอักษร */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #d2deee; /* ฟ้าน้ำเงินเข้ม */
+    --foreground: #ffffff; /* ตัวอักษรสีขาว */
+  }
+}
+
+/* Apply global styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: sans-serif; /* แทน @apply font-sans */
+  transition: background 0.3s, color 0.3s;
+}
+
+.leaflet-container {
+  width: 100% !important;
+  height: 400px !important;
+  border-radius: 20px;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  z-index: 0 !important;
+}
+.leaflet-control-container {
+  z-index: 1000 !important;
+}
