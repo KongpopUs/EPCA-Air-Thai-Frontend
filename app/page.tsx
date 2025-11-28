@@ -121,10 +121,10 @@ const HomePage = () => {
     dashboardData.pm25 <= 25
       ? '#22c55e'
       : dashboardData.pm25 <= 50
-      ? '#eab308'
-      : dashboardData.pm25 <= 100
-      ? '#f97316'
-      : '#ef4444';
+        ? '#eab308'
+        : dashboardData.pm25 <= 100
+          ? '#f97316'
+          : '#ef4444';
 
   const listToShow =
     showForecastFromSearch && customForecast.length > 0

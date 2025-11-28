@@ -2,15 +2,19 @@
 
 /* Root variables */
 :root {
-  --background: #87ceeb; /* ฟ้าอ่อน (Sky Blue) */
-  --foreground: #03396c; /* น้ำเงินเข้มสำหรับตัวอักษร */
+  --background: #87ceeb;
+  /* ฟ้าอ่อน (Sky Blue) */
+  --foreground: #03396c;
+  /* น้ำเงินเข้มสำหรับตัวอักษร */
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #d2deee; /* ฟ้าน้ำเงินเข้ม */
-    --foreground: #ffffff; /* ตัวอักษรสีขาว */
+    --background: #d2deee;
+    /* ฟ้าน้ำเงินเข้ม */
+    --foreground: #ffffff;
+    /* ตัวอักษรสีขาว */
   }
 }
 
@@ -18,7 +22,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: sans-serif; /* แทน @apply font-sans */
+  font-family: sans-serif;
+  /* แทน @apply font-sans */
   transition: background 0.3s, color 0.3s;
 }
 
@@ -38,6 +43,7 @@ body {
 .leaflet-container {
   z-index: 0 !important;
 }
+
 .leaflet-control-container {
   z-index: 1000 !important;
 }

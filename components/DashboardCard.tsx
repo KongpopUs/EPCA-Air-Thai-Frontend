@@ -21,8 +21,8 @@ export default function DashboardCard({ result, date }: Props) {
               result.pm25 <= 25
                 ? "#38c172"
                 : result.pm25 <= 50
-                ? "#f6c800"
-                : "#ef5350",
+                  ? "#f6c800"
+                  : "#ef5350",
           }}
         >
           <div className="text-5xl">{result.pm25.toFixed(2)}</div>

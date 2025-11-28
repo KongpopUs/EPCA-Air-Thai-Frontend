@@ -12,9 +12,9 @@ export default function AnimatedCircle({ value }: { value: number }) {
       style={{
         backgroundColor:
           value <= 25 ? "#22c55e"
-          : value <= 50 ? "#eab308"
-          : value <= 100 ? "#fb923c"
-          : "#ef4444"
+            : value <= 50 ? "#eab308"
+              : value <= 100 ? "#fb923c"
+                : "#ef4444"
       }}
     >
       <div className="text-5xl">{value.toFixed(2)}</div>
